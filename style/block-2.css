@@ -1,0 +1,146 @@
+.title {
+  background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+  padding:16px 0px 16px 32px;
+}
+.title-text {
+  font-size: 16px;
+  color: #7E7E82;
+  text-transform: uppercase;
+  margin:0;
+}
+.more {
+  display:flex;
+  width: 180px;
+  padding-left: 32px;
+  padding-bottom: 34px;
+  column-gap: 8px;
+}
+.more-text {
+  font-family: TT Lakes;
+  font-weight: 500;
+}
+.more-img {
+  width: 24px;
+  height: 24px;
+}
+.more a {
+  text-decoration: none;
+  color:black;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 33px 0px 33px;
+  column-gap: 32px;
+  row-gap: 16px;
+}
+.menu-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 72px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA; 
+}
+.menu-icons-swiper {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 72px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA; 
+  margin: 16px 0;
+}
+.menuRepair-swiper {
+  padding: 0px 33px 0px 33px;
+  column-gap: 32px;
+  row-gap: 16px;
+}
+.main {
+  background-color:  #F8F8F8;
+}
+.menu-icons__img {
+  align-self: center;
+  padding-left: 16px;
+}
+.menu-icons__go {
+  align-self: center;
+  padding-right: 16px;
+}
+.menu-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding:24px 32px 24px 32px;
+  column-gap: 32px;
+  row-gap: 16px;
+}
+#hidden {
+  display: none;
+}
+.swiper-pagination {
+  position:static !important;
+}
+html:root {
+  --swiper-theme-color: #909397;
+}
+@media only screen and (max-width:320px) {
+  .title {
+    padding:16px 0px 16px 16px;
+  }
+  .more {
+    padding-left:16px;
+  }
+  .menu-repair {
+    padding-left:16px;
+    padding-right: 16px;
+  }
+  #Hidden {
+    display: none;
+  }
+}
+@media (max-width: 539px) {
+  .menu-main,
+  .more,
+  .menu-repair,
+  .table {
+    display: none;
+  }
+  .hd, .hr_1, .hr_2  {
+    display: none;
+  }
+}
+@media (min-width: 540px) {
+  .mySwiper {
+    display: none;
+ } 
+} 
+@media only screen and (min-width:321px) and (max-width:769px) {
+  .title {
+    padding:16px 0px 16px 24px;
+  }
+  .menu-main {
+    padding:24px;
+  }
+  .menu-icons {
+    width: 224px;
+    height: 72px;
+  }
+  .more {
+    padding-left:24px;
+  }
+  .menu-repair {
+    padding-left:24px;
+    padding-right: 24px;
+    column-gap:24px;
+    row-gap:24px;
+  }
+  #Hidden {
+    display: none;
+  }
+  .menu-main {
+    column-gap: 24px;
+    row-gap: 16px;
+  }
+}
