@@ -75,7 +75,6 @@ body {
 }
 .title-adition {
   display: none;
-  padding-top: 10px;
 }
           /*Конец заголовка*/
           /*Начало навигационного меню*/
@@ -399,8 +398,7 @@ body {
    }
   }
 @media only screen and (min-width: 1120px) {
-  header,
-  .x { 
+  header { 
   display: none;
  }
  .title-adition { 

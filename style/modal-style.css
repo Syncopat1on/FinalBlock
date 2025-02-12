@@ -1,0 +1,240 @@
+.modal-call {
+  position: relative;
+  display: none;
+  animation: modalShow 0.3s;
+  z-index: 100;
+}
+@keyframes modalShow {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.modal-active {
+  opacity: 13%;
+}
+.modal-call__position {
+  position: fixed; 
+  right: 0; 
+  top: 0; 
+  z-index: 100;
+  border-left:1px solid #D9FFF5;
+}
+.modal-call__content {
+  width: 440px;
+  height: 1828px;
+  background-color:  #FFFFFF;
+  box-shadow: 0px 16px 52px 0px rgba(14, 24, 80, 0.2);         
+}
+.modal-close {
+  position: absolute;
+  left:-65px;
+  top:35px;
+  cursor: pointer;
+}
+.modal-call__title {
+  padding-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  color:black;
+  margin:auto 0;
+  display: flex;
+  column-gap:30px;
+}
+.modal-call__title-border {
+  width: 3px;
+  height: 40px;
+}
+#phone {
+  padding:13px 189px 13px 16px;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 8px;
+  color:#B5B6BC;
+  margin-top:24px;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  margin-left: 32px;
+}
+.modal-call__text {
+  width: 376px;
+  height: 48px;
+  margin-top:16px;
+  margin-left: 32px;
+  font-size: 14px;
+  color: #7E7E82;
+  line-height: 16px;
+}
+.pink-text {
+  color:#FF3E79;
+}
+.order-button__modal {
+  margin-left: 272px;
+  margin-top:16px;
+  background-color: #FF3E79;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border-radius:20px 20px 20px 20px;
+  border: none;
+  width: 136px;
+  height: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  user-select:none;
+}
+.order-button__modal:hover {
+  background-color: #ff5591;
+}
+.order-button__modal:active {
+  scale: 1.1;
+}
+#call,
+#call-2 {
+  cursor: pointer;
+}
+/* Обратная связь */
+.modal-feedback {
+  position: relative;
+  display: none;
+  animation: modalShow 0.3s;
+  z-index: 100;
+}
+.modal-feedback__position {
+  position: fixed; 
+  right: 0; 
+  top: 0; 
+  z-index: 100;
+  border-left:1px solid #D9FFF5;
+}
+.modal-feedback__title {
+  padding-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  color:black;
+  margin:auto 0;
+  display: flex;
+  column-gap:30px;
+}
+.modal-feedback__title-border {
+  width: 3px;
+  height: 40px;
+}
+.form-feedback {
+  padding-left: 32px;
+}
+.modal-feedback__content {
+  width: 440px;
+  height: 1828px;
+  background-color:  #FFFFFF;
+  box-shadow: 0px 16px 52px 0px rgba(14, 24, 80, 0.2);
+}
+.modal-feedback__text {
+  width: 376px;
+  height: 48px;
+  margin-top:16px;
+  margin-left: 32px;
+  font-size: 14px;
+  color: #7E7E82;
+  line-height: 16px;
+}
+#name,
+#email,
+#phone2,
+#message {
+  margin-left:32px;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 8px;
+  color:#B5B6BC;
+  padding:13px 189px 13px 16px;
+}
+#phone2,
+#email,
+#name {
+  margin-bottom:16px;
+}
+#name {
+  margin-top:24px;
+}
+#message {
+  padding:13px 189px 80px 16px;
+}
+.modal-close__feedback {
+  position: absolute;
+  left:-65px;
+  top:35px;
+  cursor: pointer;
+}
+.menu-container__modal {
+  position: relative;
+  display: none;
+  animation: modalShow 0.3s;
+  z-index: 100;
+}
+.background-menu__modal {
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  width: 320px;
+  height: 1480px;
+  background-color: #FFFFFF;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 100;
+}
+.up-menu__modal {
+  display: flex;
+  justify-content: flex-start;
+  width: 320px;
+  align-items: center;
+}
+.up-menu-container__modal {
+  padding-top: 18px;
+}
+/* Адаптация под мобилки  */
+@media only screen and (max-width:320px) {
+  .modal-call__title,
+  .modal-feedback__title
+   {
+    padding-top:104px;
+    column-gap:12px;
+  }
+  .modal-call__content,
+  .modal-feedback__content {
+    width: 320px;
+  }
+  .modal-close,
+  .modal-close__feedback {
+    left:16px;
+    top:24px;
+  }
+  .order-button__modal {
+    margin-left: 168px;
+  }
+  #phone {
+    padding:12px 90px 12px 16px;
+    margin-left: 16px;
+  }
+  #name,
+  #email,
+  #phone2 {
+    padding:13px 90px 13px 16px;
+    margin-left: 16px;
+  }
+  #message {
+    padding:13px 90px 80px 16px;
+    margin-left: 16px;
+  }
+  .modal-call__text,
+  .modal-feedback__text {
+    margin-left:16px;
+    width: 288px;
+    height: 64px;
+  }
+}
+@media only screen and (max-width:360px) {
+  .background-menu__modal {
+    width: 360px;
+  }
+  .up-menu-container__modal {
+    padding-top: 16px;
+  }
+}

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <title>FinalBoss</title>
-  <link rel="Icon"  type="png" href="icons/logo-black.png">
+  <link rel="Icon" type="png" href="icons/logo-black.png">
 </head>
 <body>
 <section class="backgruoundAll"> 
@@ -20,9 +20,8 @@
       <div class="background-menu">
         <div class="up-menu-container">
           <div class="up-menu">
-            <div class="up-menu__item icon x"><a href="#"><img src="icons/x.svg"></a></div>
-            <div class="up-menu__item logo"><a href="#"><img src="icons/logo.svg"></a></div>
-            <div class="up-menu__item icon search"><a href="#"><img src="icons/search.svg"></a></div>
+            <div class="up-menu__item logo"><img src="icons/logo.svg"></div>
+            <div class="up-menu__item icon search"><img src="icons/search.svg"></div>
           </div>
         </div>
           <nav class="main-nav">
@@ -40,9 +39,9 @@
           <footer class="footer">
             <div class="bottom-menu">
               <div class="menu-icons__container">
-                <div class="menu-icons__container--img icon"><a href="#"><img src="icons/call.svg"></a></div>
-                <div class="menu-icons__container--img icon"><a href="#"><img src="icons/chat.svg"></a></div>
-                <div class="menu-icons__container--img icon"><a href="#"><img src="icons/profile.svg"></a></div>
+                <div class="menu-icons__container--img icon"><img src="icons/call.svg"></div>
+                <div class="menu-icons__container--img icon"><img src="icons/chat.svg"></div>
+                <div class="menu-icons__container--img icon"><img src="icons/profile.svg"></div>
               </div>
                 <div class="contacts">
                   <div class="contacts-mail"><a href="mailto:mail@cps.com&body=Привет.">mail@cps.com</a></div>
@@ -50,9 +49,9 @@
                 </div>
               </div>
             <div class="lang">
-              <div class="lang-ru"><a href="#">RU</a></div>
-              <div class="lang-en"><a href="#">EN</a></div>
-              <div class="lang-ch"><a href="#">CH</a></div>
+              <div class="lang-ru">RU</div>
+              <div class="lang-en">EN</div>
+              <div class="lang-ch">CH</div>
             </div>
           </footer>
         </div>
@@ -61,17 +60,17 @@
       <header class="header-navigation">
         <nav class="navigation">
           <div class="nav_menu__group-conteiner_1">
-            <div class="nav-menu__group-item burger anim"><a href="#"><img src="icons/burger.svg"></a></div>
+            <div class="nav-menu__group-item burger anim" id="burgerOpen"><img src="icons/burger.svg"></div>
             <img class="nav-menu__group-item hr_1" src="icons/hr.svg">
-            <div class="nav-menu__group-item"><a href="#"><img src="icons/logo.svg"></a></div>
+            <div class="nav-menu__group-item"><img src="icons/logo.svg"></div>
           </div>
             <div class="nav-menu__group-container_2">
-              <div class="nav-menu__group-item hd anim"><a href="#"><img src="icons/call.svg"></a></div>
-              <div class="nav-menu__group-item hd anim"><a href="#"><img src="icons/chat.svg"></a></div>
-              <div class="nav-menu__group-item hd anim" ><a href="#"><img src="icons/profile.svg"></a></div>
+              <div class="nav-menu__group-item hd anim"><img src="icons/call.svg"></div>
+              <div class="nav-menu__group-item hd anim"><img src="icons/chat.svg"></div>
+              <div class="nav-menu__group-item hd anim" ><img src="icons/profile.svg"></div>
               <img class="nav-menu__group-item hr_2" src="icons/hr.svg">
-              <div class="nav-menu__group-item anim"><a href="#"><img src="icons/repair.svg"></a></div>
-              <div class="nav-menu__group-item anim"><a href="#"><img src="icons/checkstatus.svg"></a></div>
+              <div class="nav-menu__group-item anim" id="feedbackOpen"><img src="icons/repair.svg"></div>
+              <div class="nav-menu__group-item anim" id ="call2"><img src="icons/checkstatus.svg"></div>
             </div>
           </nav>
         </header>
@@ -82,11 +81,11 @@
               <h1 class="head-container__text">Услуги и сервисы</h1>
             </div>
             <div class="title-adition">
-              <div class="title-adition__bid">
+              <div class="title-adition__bid" id="feedbackOpen2">
                 <div class="title-adition__bid-text"><a class="title-adition__bid-a" href="#">Оставить заявку</a></div>
                 <div><a class="anim" href="#"><img src="icons/repair.svg"></a></div> 
               </div>
-            <div class="title-adition__status">
+            <div class="title-adition__status" id="call">
               <div class="title-adition__status-text"><a class="title-adition__status-a" href="#">Статус ремонта</a></div>
               <div><a class="anim" href="#"><img src="icons/checkstatus.svg"></a></div>
             </div>
@@ -121,9 +120,9 @@
             </div>
           </section>
         <hr class="hr">
-          <header class="title">
-          <p class="title-text">Ремонт техники различных брендов</p>
-          </header>
+          <div class="title">
+            <p class="title-text">Ремонт техники различных брендов</p>
+          </div>
             <main class="main">
               <div class="menu mySwiper">
                 <div class="swiper-wrapper">
@@ -493,11 +492,101 @@
           <div class="downMenu-text downMenu-text-1">© 2019 CPS <br class="br1"> Разработано командой Apesong </div>
           <div class="downMenu-text downMenu-text-2">Политика конфиденциальности</div>
           <div class="downMenu-text downMenu-text-3">Информация, размещенная на данной странице,<br class="br2"> не является публичной офертой</div>
-        </footer> 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        </footer>
       </main>
     </div>
-  </section>
-</body>
+  </section>  
+      <section class="modal-call" id="modalCall">
+        <div class="modal-call__position">
+          <div class="modal-close anim" id="modalClose"><img src="icons/x.svg"></div>
+            <div class="modal-call__content">
+              <div class="modal-call__title">
+                <img class="modal-call__title-border" src="icons/highlight.svg">
+                <div class="modal-call__title-text">Заказать звонок</div>
+              </div>
+                <div class="form-tell">
+                  <form>
+                  <input type="tel" id="phone" name="phone"  
+                          pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
+                          placeholder="Телефон"
+                          required>
+                  <form>
+                </div>
+                  <div class="modal-call__text">Нажимая “отправить”, вы даете согласие на <span class="pink-text">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink-text">политикой конфиденциальности</span></div>
+                  <button class="order-button__modal" type="submit">Отправить<img class="order-img" src="icons/order-line.svg"></button>
+                </div>
+              </div>
+            </section> 
+            <section class="modal-feedback" id="modalFeedback">
+              <div class="modal-feedback__position">
+                <div class="modal-close__feedback anim" id="modalCloseFeedback"><img src="icons/x.svg"></div>
+                <div class="modal-feedback__content">
+                  <div class="modal-feedback__title">
+                    <img class="modal-feedback__title-border" src="icons/highlight.svg">
+                    <div class="modal-feedback__title-text">Обратная связь</div>
+                  </div>
+                  <form class="form-feedback">
+                    <input type="text" id="name" name="name"
+                    placeholder="Имя"
+                    required>
+                    <input type="tel" id="phone2" name="phone"  
+                    pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
+                    placeholder="Телефон"
+                    required>
+                    <input type="email" id="email" name="email"  
+                    placeholder="Электронная почта"
+                    required>
+                    <input type="text" id="message" name="text"  
+                    placeholder="Сообщение">
+                  </form>
+                <div class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на <span class="pink-text">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink-text">политикой конфиденциальности</span></div>
+                <button class="order-button__modal" type="submit">Отправить<img class="order-img" src="icons/order-line.svg"></button>
+              </div>
+            </div>
+          </section>
+          <section class="menu-container__modal">
+            <div class="background-menu__modal">
+              <div class="up-menu-container__modal">
+                <div class="up-menu__modal">
+                  <div class="up-menu__item icon x" id="menuClose"><img src="icons/x.svg"></div>
+                  <div class="up-menu__item logo"><img src="icons/logo.svg"></div>
+                  <div class="up-menu__item icon search_modal"><img src="icons/search.svg"></div>
+                </div>
+              </div>
+                <nav class="main-nav">
+                  <ul class="main-nav__list">
+                    <a href="#"><li class="main-nav__list-item">Ремонт техники</li></a>
+                    <a href="#"><li class="main-nav__list-item activeIcon">Услуги и сервисы</li></a>
+                    <a href="#"><li class="main-nav__list-item">Корпоративным клиентам</li></a>
+                    <a href="#"><li class="main-nav__list-item">Продавцам техники</li></a>
+                    <a href="#"><li class="main-nav__list-item">Партнерам</li></a>
+                    <a href="#"><li class="main-nav__list-item">Производителям</li></a>
+                    <a href="#"><li class="main-nav__list-item">Наши сервисные центры</li></a>
+                    <a href="#"><li class="main-nav__list-item">Контакты</li></a>
+                  </ul>
+                </nav>
+                <footer class="footer">
+                  <div class="bottom-menu">
+                    <div class="menu-icons__container">
+                      <div class="menu-icons__container--img icon"><img src="icons/call.svg"></div>
+                      <div class="menu-icons__container--img icon"><img src="icons/chat.svg"></div>
+                      <div class="menu-icons__container--img icon"><img src="icons/profile.svg"></div>
+                    </div>
+                      <div class="contacts">
+                        <div class="contacts-mail"><a href="mailto:mail@cps.com&body=Привет.">mail@cps.com</a></div>
+                        <div class="contacts-tel"><a href="tel:8 800 890 8900">8 800 890 8900</a></div>
+                      </div>
+                    </div>
+                  <div class="lang">
+                    <div class="lang-ru">RU</div>
+                    <div class="lang-en">EN</div>
+                    <div class="lang-ch">CH</div>
+                  </div>
+                </footer>
+              </div>
+            </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
 </html>

@@ -32,10 +32,10 @@
     text-transform: uppercase;
     width: 119px;
     height: 32px;
+    user-select:none;
 }
 .order-button:hover {
     background-color: #ff5591;
-    color:rgb(36, 35, 35);
 }  
 .order-button:active {
     scale: 1.1;
@@ -85,6 +85,7 @@
   text-transform: uppercase;
   width: 119px;
   height: 32px;
+  user-select:none;
 }
 @media only screen and (max-width:320px)  {
     .table {
