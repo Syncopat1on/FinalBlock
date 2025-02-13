@@ -16,13 +16,13 @@
   right: 0; 
   top: 0; 
   z-index: 100;
-  border-left:1px solid #D9FFF5;
+  border-left:1px solid var(--hr--color);
 }
 .modal-call__content {
   width: 440px;
   height: 1828px;
-  background-color:  #FFFFFF;
-  box-shadow: 0px 16px 52px 0px rgba(14, 24, 80, 0.2);         
+  background-color:  var(--background--color);
+  box-shadow: 0px 16px 52px 0px var(--box-shadow);         
 }
 .modal-close {
   position: absolute;
@@ -34,7 +34,7 @@
   padding-top: 40px;
   font-size: 24px;
   font-weight: 700;
-  color:black;
+  color:var(--text--color-black);
   margin:auto 0;
   display: flex;
   column-gap:30px;
@@ -45,9 +45,9 @@
 }
 #phone {
   padding:13px 189px 13px 16px;
-  border: 1px solid rgba(234, 234, 234, 1);
+  border: 1px solid var(--border--color-grey);
   border-radius: 8px;
-  color:#B5B6BC;
+  color:var(--text--modal-color);
   margin-top:24px;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -59,17 +59,17 @@
   margin-top:16px;
   margin-left: 32px;
   font-size: 14px;
-  color: #7E7E82;
+  color: var(--text--grey-color);
   line-height: 16px;
 }
 .pink-text {
-  color:#FF3E79;
+  color:var(--button--color);
 }
 .order-button__modal {
   margin-left: 272px;
   margin-top:16px;
-  background-color: #FF3E79;
-  color: #FFFFFF;
+  background-color: var(--button--color);
+  color: var(--background--color);
   padding: 8px 12px;
   border-radius:20px 20px 20px 20px;
   border: none;
@@ -80,11 +80,9 @@
   cursor: pointer;
   user-select:none;
 }
-.order-button__modal:hover {
-  background-color: #ff5591;
-}
 .order-button__modal:active {
   scale: 1.1;
+  background-color: var(--button-active-color);
 }
 #call,
 #call-2 {
@@ -102,13 +100,13 @@
   right: 0; 
   top: 0; 
   z-index: 100;
-  border-left:1px solid #D9FFF5;
+  border-left:1px solid var(--hr--color);
 }
 .modal-feedback__title {
   padding-top: 40px;
   font-size: 24px;
   font-weight: 700;
-  color:black;
+  color:var(--text--color-black);
   margin:auto 0;
   display: flex;
   column-gap:30px;
@@ -123,8 +121,8 @@
 .modal-feedback__content {
   width: 440px;
   height: 1828px;
-  background-color:  #FFFFFF;
-  box-shadow: 0px 16px 52px 0px rgba(14, 24, 80, 0.2);
+  background-color:  var(--background--color);
+  box-shadow: 0px 16px 52px 0px var(--box-shadow);
 }
 .modal-feedback__text {
   width: 376px;
@@ -132,7 +130,7 @@
   margin-top:16px;
   margin-left: 32px;
   font-size: 14px;
-  color: #7E7E82;
+  color: var(--text--grey-color);
   line-height: 16px;
 }
 #name,
@@ -142,9 +140,9 @@
   margin-left:32px;
   font-family: "TT Lakes";
   font-size: 16px;
-  border: 1px solid rgba(234, 234, 234, 1);
+  border: 1px solid var(--border--color-grey);
   border-radius: 8px;
-  color:#B5B6BC;
+  color:var(--text--modal-color);
   padding:13px 189px 13px 16px;
 }
 #phone2,
@@ -171,10 +169,10 @@
   z-index: 100;
 }
 .background-menu__modal {
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  box-shadow: 16px 0px 52px 0px var(--box-shadow);
   width: 320px;
   height: 1480px;
-  background-color: #FFFFFF;
+  background-color: var(--background--color);
   position: fixed;
   left:0;
   top:0;

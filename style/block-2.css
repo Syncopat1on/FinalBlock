@@ -1,10 +1,10 @@
 .title {
-  background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+  background: linear-gradient(270deg, var(--background--color) 0%, var(--bg--color) 98.61%);
   padding:16px 0px 16px 32px;
 }
 .title-text {
   font-size: 16px;
-  color: #7E7E82;
+  color:var(--text--grey-color);
   text-transform: uppercase;
   margin:0;
 }
@@ -23,9 +23,9 @@
   width: 24px;
   height: 24px;
 }
-.more a {
+.more {
   text-decoration: none;
-  color:black;
+  color:var(--text--black-color-2);
 }
 .menu {
   display: flex;
@@ -39,18 +39,18 @@
   justify-content: space-between;
   width: 240px;
   height: 72px;
-  background-color: white;
+  background-color: var(--white--color);
   border-radius: 5px;
-  border: 1px solid #EAEAEA; 
+  border: 1px solid var(--border--color-grey); 
 }
 .menu-icons-swiper {
   display: flex;
   justify-content: space-between;
   width: 240px;
   height: 72px;
-  background-color: white;
+  background-color: var(--white--color);
   border-radius: 5px;
-  border: 1px solid #EAEAEA; 
+  border: 1px solid var(--border--color-grey); 
   margin: 16px 0;
 }
 .menuRepair-swiper {
@@ -59,7 +59,7 @@
   row-gap: 16px;
 }
 .main {
-  background-color:  #F8F8F8;
+  background-color: var(--bg--color);
 }
 .menu-icons__img {
   align-self: center;
@@ -83,7 +83,7 @@
   position:static !important;
 }
 html:root {
-  --swiper-theme-color: #909397;
+  --swiper-theme-color: var(--swiper--pagination-color);
 }
 @media only screen and (max-width:320px) {
   .title {
