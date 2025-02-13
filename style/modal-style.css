@@ -2,7 +2,7 @@
   position: relative;
   display: none;
   animation: modalShow 0.3s;
-  z-index: 100;
+  z-index: 110;
 }
 @keyframes modalShow {
   0% {opacity: 0;}
@@ -15,7 +15,7 @@
   position: fixed; 
   right: 0; 
   top: 0; 
-  z-index: 100;
+  z-index: 110;
   border-left: 1px solid var(--hr--color);
 }
 .modal-call__content {
@@ -93,13 +93,13 @@
   position: relative;
   display: none;
   animation: modalShow 0.3s;
-  z-index: 100;
+  z-index: 110;
 }
 .modal-feedback__position {
   position: fixed; 
   right: 0; 
   top: 0; 
-  z-index: 100;
+  z-index: 110;
   border-left: 1px solid var(--hr--color);
 }
 .modal-feedback__title {
@@ -188,7 +188,7 @@
   padding-top: 18px;
 }
 /* Адаптация под мобилки  */
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:360px) {
   .modal-call__title,
   .modal-feedback__title
    {
@@ -228,10 +228,14 @@
     height: 64px;
   }
 }
-@media only screen and (max-width:360px) {
+@media only screen and (min-width:321px) and (max-width:425px) {
+  .modal-call__content,
+  .modal-feedback__content,
   .background-menu__modal {
-    width: 360px;
+   width: 360px;
   }
+}
+@media only screen and (max-width:360px) {
   .up-menu-container__modal {
     padding-top: 16px;
   }

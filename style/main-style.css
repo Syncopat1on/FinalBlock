@@ -417,16 +417,16 @@ body {
   }
 @media only screen and (min-width: 1120px) {
   header { 
-  display: none;
+    display: none;
  }
  .title-adition { 
-  display: flex;
+    display: flex;
  }
  .nav__group {
-  flex-flow: wrap;
+    flex-flow: wrap;
  }
  .head {
-  padding-top: 42px;
+    padding-top: 42px;
  }
 }
 @media only screen and (min-width: 1337px) and (max-width:1479px) {
