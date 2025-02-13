@@ -1,8 +1,10 @@
 @font-face {
-  font-family: "TT Lakes";
+  font-family: "TT Lakes Regular", "TT Lakes Medium", "TT Lakes Bold";
+  src: url("fonts/TTLakes-Bold.woff") format('woff'),
+       url("fonts/TTLakes-Regular.woff") format('woff'),
+       url("fonts/TTLakes Medium.woff") format('woff');
   font-style: normal;
-  font-weight: 400;
-  src: local("TT Lakes"),  url("/fonts/TTLakes-Bold.woff");
+  font-weight: normal;
 }
 html {
   box-sizing: border-box;
@@ -35,7 +37,6 @@ body {
   --table--hr: #ddd;
   --box-shadow: rgba(14, 24, 80, 0.2);
 }
-
             /*Начало шапки*/
 .navigation {
   display: flex;
