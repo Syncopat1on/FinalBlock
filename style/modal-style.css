@@ -187,6 +187,9 @@
 .up-menu-container__modal {
   padding-top: 18px;
 }
+.logo-modal {
+  padding-left: 16px;
+}
 /* Адаптация под мобилки  */
 @media only screen and (max-width:360px) {
   .modal-call__title,

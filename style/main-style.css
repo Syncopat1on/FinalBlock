@@ -45,7 +45,7 @@ body {
 }
 .nav_menu__group-conteiner_1 {
   display: flex;
-  column-gap: 20px;
+  column-gap: 16px;
   padding: 24px 0px 24px 24px;
   align-items: center;
 }
@@ -210,7 +210,7 @@ body {
   border: 1px solid var(--border--color-grey);
   border-radius: 6px;
   position: relative;
-  margin: 16px 0; 
+  margin: 16px auto; 
 }
 .menu-repair__text {
   padding-left: 16px;
@@ -255,7 +255,6 @@ body {
   padding-left: 32px;
   padding-bottom: 21px;
   padding-right: 32px;
-  background: var(--bg--color);
 }
 .downMenu-text {
   padding-top: 32px;
@@ -305,6 +304,11 @@ body {
   .downMenu {
     padding-left: 16px;
     padding-right: 16px;
+    display: block;
+    text-align-last: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 320px;
   }
   .nav_menu__group-conteiner_1 {
     padding: 24px 0px 24px 16px;
@@ -326,10 +330,9 @@ body {
   }
   .downMenu-text {
     text-align: center;
-    column-gap: 16px;
   }
 }
-@media only screen and (min-width:321px){
+@media only screen and (min-width:321px) {
   .downMenu-text-1 {
     line-height: 16px;
     letter-spacing: 0;
@@ -345,15 +348,28 @@ body {
     height: 259px;
   }
 }
-@media only screen and (min-width:321px) and (max-width:400px){
+@media only screen and (min-width:321px) and (max-width:400px) {
   .text_img {
     margin-right: 0;
   }
 }
-@media only screen and (max-width:575px) {
+@media only screen and (min-width:321px) and (max-width:575px) {
   .downMenu {
     display: block;
     text-align-last: center;
+    padding-left: 50px;
+    padding-right: 40px;
+    margin: 0 auto;
+    width: 320px;
+  }
+  .downMenu-text-2 {
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width:576px) and (max-width:770px) {
+  .downMenu {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -372,7 +388,7 @@ body {
   width: 45%;
  }
 }
-@media only screen and (min-width:769px)  {
+@media only screen and (min-width:769px) {
  .text_img {
   width: 531px;
   height: 307px;
@@ -387,10 +403,6 @@ body {
   .table-text,
   .table-text2 {
     padding-left: 24px;
-  }
-  .downMenu {
-    padding-left: 24px;
-    padding-right: 24px;
   }
   .menu-repair__container {
     width: 224px;

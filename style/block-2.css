@@ -30,9 +30,9 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 33px 0px 33px;
+  padding: 0px 33px 16px 33px;
   column-gap: 32px;
-  row-gap: 16px;
+  margin:0 auto;
 }
 .menu-icons {
   display: flex;
@@ -51,7 +51,7 @@
   background-color: var(--white--color);
   border-radius: 5px;
   border: 1px solid var(--border--color-grey); 
-  margin: 16px 0;
+  margin: 16px auto;
 }
 .menuRepair-swiper {
   padding: 0px 33px 0px 33px;
