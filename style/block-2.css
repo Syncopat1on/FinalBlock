@@ -1,15 +1,15 @@
 .title {
   background: linear-gradient(270deg, var(--background--color) 0%, var(--bg--color) 98.61%);
-  padding:16px 0px 16px 32px;
+  padding: 16px 0px 16px 32px;
 }
 .title-text {
   font-size: 16px;
-  color:var(--text--grey-color);
+  color: var(--text--grey-color);
   text-transform: uppercase;
-  margin:0;
+  margin: 0;
 }
 .more {
-  display:flex;
+  display: flex;
   width: 180px;
   padding-left: 32px;
   padding-bottom: 34px;
@@ -25,7 +25,7 @@
 }
 .more {
   text-decoration: none;
-  color:var(--text--black-color-2);
+  color: var(--text--black-color-2);
 }
 .menu {
   display: flex;
@@ -72,7 +72,7 @@
 .menu-main {
   display: flex;
   flex-wrap: wrap;
-  padding:24px 32px 24px 32px;
+  padding: 24px 32px 24px 32px;
   column-gap: 32px;
   row-gap: 16px;
 }
@@ -87,13 +87,13 @@ html:root {
 }
 @media only screen and (max-width:320px) {
   .title {
-    padding:16px 0px 16px 16px;
+    padding: 16px 0px 16px 16px;
   }
   .more {
-    padding-left:16px;
+    padding-left: 16px;
   }
   .menu-repair {
-    padding-left:16px;
+    padding-left: 16px;
     padding-right: 16px;
   }
   #Hidden {
@@ -121,20 +121,20 @@ html:root {
     padding:16px 0px 16px 24px;
   }
   .menu-main {
-    padding:24px;
+    padding: 24px;
   }
   .menu-icons {
     width: 224px;
     height: 72px;
   }
   .more {
-    padding-left:24px;
+    padding-left: 24px;
   }
   .menu-repair {
-    padding-left:24px;
+    padding-left: 24px;
     padding-right: 24px;
-    column-gap:24px;
-    row-gap:24px;
+    column-gap: 24px;
+    row-gap: 24px;
   }
   #Hidden {
     display: none;

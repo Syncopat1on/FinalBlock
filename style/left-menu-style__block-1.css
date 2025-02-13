@@ -1,17 +1,7 @@
-@font-face {
-  font-family:"TT Lakes";
-  font-style:normal;
-  font-weight:400;
-  src:local("TT Lakes"),  url("/fonts/TTLakes-Bold.woff");
-}
-body {
-  margin:0;
-  font-family: 'TT Lakes';
-}
 .background-menu {
   height: 1024px;
   width: 306px;
-  display:flex;
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
@@ -25,7 +15,7 @@ body {
   margin-left: 24px;
 }
 .logo {
-  margin-left:22px;
+  margin-left: 22px;
   padding-top: 0px;
 }
 .search {
@@ -38,32 +28,32 @@ body {
 .main-nav__list-item, a {
   text-decoration: none;
   list-style: none;
-  color:var(--text--color-black);
+  color: var(--text--color-black);
   margin-bottom: 28px;
   letter-spacing: -0.2px;
 }
 .main-nav__list-item {
-  padding-left:24px;
+  padding-left: 24px;
 }
 .main-nav__list {
-  padding-left:0;
+  padding-left: 0;
   padding-top: 45px;
   font-weight: 500;
   font-size: 16px;
-  margin:0;
+  margin: 0;
 }
 .lang {
-  display:flex;
-  margin-top:39px;
+  display: flex;
+  margin-top: 39px;
 }
 .footer {
-  margin-top:138px;
+  margin-top: 138px;
   padding-left: 24px;
 }
 .menu-icons__container {
   column-gap: 16px;
   padding-bottom: 16px;
-  display:flex;
+  display: flex;
 }
 .contacts {
   padding-bottom: 16px;
@@ -91,16 +81,16 @@ body {
   color: var(--text--grey-color);
 }
 .main-nav__list-item:hover,:focus  a {
-  color:var(--text--grey-color); 
-  border-left:4px solid var(--border--left-color);
+  color: var(--text--grey-color); 
+  border-left: 4px solid var(--border--left-color);
 }
 .icon:active {
   transform: scale(1.2)  rotate(-5deg);
-  transition:transform 0.1s;   
+  transition: transform 0.1s;   
 }
 .activeIcon {
-  border-left:4px solid var(--border--left-color);
-  color:var(--text--grey-color); 
+  border-left: 4px solid var(--border--left-color);
+  color: var(--text--grey-color); 
 }
 .search_modal {
   margin-right: 24px;
@@ -112,7 +102,7 @@ body {
     padding-left: 16px;
   }
   .main-nav__list-item {
-    padding-left:16px;
+    padding-left: 16px;
   }
   .x {
     margin-left: 16px;

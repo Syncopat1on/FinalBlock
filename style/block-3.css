@@ -1,18 +1,28 @@
 .table {
     border-collapse: collapse;
-    background-color:var(--white--color);
+    background-color: var(--white--color);
     width: 100%;
-    height:100%;
-    border:32px solid var(--bg--color);
+    height: 100%;
+    border: 32px solid var(--bg--color);
+    font-size: 14px;
 }
 .th {
-    padding: 0 0 15px 23px;
+    padding: 0px 0px 16px 24px;
     text-align: left;
     font-weight: 400;
 }
 .td {
-    padding: 23px;
     border-bottom: 1px solid var(--table--hr);
+    font-size: 14px;
+}
+.td1 {
+    padding: 23px 0px 23px 23px;
+}
+.td2 {
+    padding: 23px 23px 23px 23px;
+}
+.td3 {
+    padding: 23px 23px 23px 23px;
 }
 .td-order {
     width: 119px;
@@ -26,28 +36,29 @@
     padding: 8px 12px;
     border: none;
     cursor: pointer;
-    border-radius:20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
     font-weight: 600;
     text-transform: uppercase;
     width: 119px;
     height: 32px;
-    user-select:none;
+    user-select: none;
 }
 .order-button:active {
     scale: 1.1;
     background-color: var(--button-active-color);
 }
 .order-img {
-    margin-left:17px;
+    margin-left: 17px;
 }
 .thead {
-    background:var(--bg--color);
+    background: var(--bg--color);
     color: var(--text--grey-color);
     font-size: 14px;
     line-height: 18px;
 }
 .tbody {
     font-size: 14px;
+    border-radius: 14px;
 }
 .table-container {
     width: 250px;
@@ -70,27 +81,38 @@
 }
 .order-button--table {
   position: absolute;
-  left:110px;
+  left: 110px;
   bottom: 1px;
   background-color: var(--button--color);
   color: var(--background--color);
   padding: 4px 8px 4px 12px;
   border: none;
   cursor: pointer;
-  border-radius:20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   font-weight: 600;
   text-transform: uppercase;
   width: 119px;
   height: 32px;
-  user-select:none;
+  user-select: none;
 }
-@media only screen and (max-width:320px)  {
-    .table {
-      border: 16px solid var(--bg--color);
-    } 
-  }
 @media only screen and (min-width:321px) and (max-width:769px) {
   .table {
     border: 24px solid var(--bg--color);
   }
+  .td1,
+  .th1 {
+    padding: 23px 0px 23px 16px;
+  }
+  .td2,
+  .th2 {
+    padding: 23px 0px 23px 0px;
+  }
+  .td3,
+  .th3 {
+    padding: 23px 0px 23px 22px;
+  }
+  .td-order {
+    padding: 16px 16px 23px 23px;
+  }
+  
 }
